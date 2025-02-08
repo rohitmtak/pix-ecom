@@ -1,0 +1,20 @@
+# Python cache files
+*.pyc
+__pycache__/
+
+# SQLite database files
+*.db
+
+# Virtual environment
+.venv/
+
+# Logs and temporary files
+*.log
+*.tmp
+
+# Ignore Flask's instance folder
+instance/
+
+# IDE-specific files
+.vscode/
+.idea/

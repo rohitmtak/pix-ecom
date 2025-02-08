@@ -1,0 +1,22 @@
+<!-- Navbar -->
+<nav class="navbar">
+    <!-- Left Section: Burger Menu & Search -->
+    <div class="left-section">
+        <button class="menu-btn">
+            <i class="fas fa-bars"></i>
+        </button>
+        <input type="text" class="search-box" placeholder="Search...">
+    </div>
+
+    <!-- Center: Logo -->
+    <a href="#">
+        <img src="{{ url_for('static', filename='images/logo.png') }}" alt="Logo" class="logo">
+    </a>
+
+    <!-- Right Section: Profile, Wishlist, Shopping Bag -->
+    <div class="right-section">
+        <i class="far fa-user"></i>
+        <i class="far fa-heart"></i>
+        <i class="fas fa-shopping-bag"></i>
+    </div>
+</nav>
