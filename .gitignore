@@ -18,3 +18,5 @@ instance/
 # IDE-specific files
 .vscode/
 .idea/
+
+migrations/

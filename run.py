@@ -1,14 +1,8 @@
-from flask import Flask
-from models import db
-import config
+from app import create_app, db
+from flask_migrate import Migrate
 
-app = Flask(__name__)
-
-# Load MySQL Database Configuration
-app.config["SQLALCHEMY_DATABASE_URI"] = config.SQLALCHEMY_DATABASE_URI
-app.config["SQLALCHEMY_TRACK_MODIFICATIONS"] = config.SQLALCHEMY_TRACK_MODIFICATIONS
-
-db.init_app(app)
+app = create_app()
+migrate = Migrate(app, db)  # Add Flask-Migrate
 
 if __name__ == "__main__":
     app.run(debug=True)

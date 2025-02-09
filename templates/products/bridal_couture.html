@@ -5,15 +5,47 @@
 {% block content %}
     
 
-    <div class="product-card" onmouseover="startSlideshow(this)" onmouseout="stopSlideshow(this)">
-        <img src="image1.jpg" alt="Product" class="product-image">
-        <div class="product-info">
-            <h3>Product Name</h3>
-            <p>$99.99</p>
-        </div>
-    </div>
- 
-    
+<h1>Premium Threads</h1>
 
+<div class="product-container">
+
+    <div class="product">
+        <div class="image-container">
+            <img src="image1.jpg" alt="Lexicon Luxe" class="product-image"
+                data-images='["image1.jpg", "image11.jpg", "image12.jpg", "image13.jpg"]'>
+        </div>
+        <p class="product-title">Lexicon Luxe - Tshirt</p>
+        <p class="product-price">$100.00</p>
+    </div>
+
+    <div class="product">
+        <div class="image-container">
+            <img src="image4.jpg" alt="Adjective Attire" class="product-image"
+                data-images='["image4.jpg", "image5.jpg", "image6.jpg"]'>
+        </div>
+        <p class="product-title">Adjective Attire - Tshirt</p>
+        <p class="product-price">$120.00</p>
+    </div>
+
+    <div class="product">
+        <div class="image-container">
+            <img src="image7.jpg" alt="ThreadCraft Vibes" class="product-image"
+                data-images='["image7.jpg", "image8.jpg", "image9.jpg"]'>
+        </div>
+        <p class="product-title">ThreadCraft Vibes - Tshirt</p>
+        <p class="product-price">$140.00</p>
+    </div>
+
+    <div class="product">
+        <div class="image-container">
+            <img src="image10.jpg" alt="Verbal Vogue Tees" class="product-image"
+                data-images='["image10.jpg", "image11.jpg", "image12.jpg"]'>
+        </div>
+        <p class="product-title">Verbal Vogue Tees - Tshirt</p>
+        <p class="product-price">$120.00</p>
+    </div>
+
+</div>
+ 
 
 {% endblock %}
